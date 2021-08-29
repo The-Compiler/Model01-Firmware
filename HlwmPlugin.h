@@ -32,9 +32,10 @@ class Hlwm : public kaleidoscope::Plugin {
 
   static cRGB color;
   EventHandlerResult onKeyswitchEvent(Key &mapped_key, KeyAddr key_addr, uint8_t key_state);
+  EventHandlerResult onSetup(void);
 
  private:
-  void setTagColor(KeyAddr keyAddr, uint8_t tag);
+  void setTagColor(uint8_t tag);
 };
 }
 }
