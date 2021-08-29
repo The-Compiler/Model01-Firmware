@@ -1,60 +1,37 @@
 #include <stdint.h>
 #include "HlwmPlugin.h"
 #include "kaleidoscope/layers.h"
+#include "kaleidoscope/keyswitch_state.h"
 
 namespace kaleidoscope {
 namespace plugin {
 
-// public:
-uint8_t Hlwm::cmdLayer;
-cRGB Hlwm::color = CRGB(255, 0, 255);
-uint8_t Hlwm::lock_hue = 170;
+//cRGB Hlwm::color = CRGB(255, 0, 255);
 
-// private:
-KeyAddr Hlwm::cmdLayerToggleKeyAddr;
-bool Hlwm::cmdActive = false;
+static Key tag_keys[] = {Key_1, Key_2, Key_3, Key_4, Key_5, Key_6, Key_7, Key_8, Key_9, Key_0};
 
-EventHandlerResult Hlwm::onSetup(void) {
-  return EventHandlerResult::OK;
+void Hlwm::setTagColor(KeyAddr keyAddr, uint8_t tagIndex) {
+    cRGB color = CRGB(tagIndex * 25, 0, 0);
+    ::LEDControl.setCrgbAt(KeyAddr(keyAddr), color);
 }
 
-void Hlwm::setKeyboardLEDColors(void) {
-  ::LEDControl.set_mode(::LEDControl.get_mode_index());
-
-  for (auto key_addr : KeyAddr::all()) {
-    Key k = Layer.lookupOnActiveLayer(key_addr);
-    Key layer_key = Layer.getKey(cmdLayer, key_addr);
-
-    if (k == LockLayer(cmdLayer)) {
-      cmdLayerToggleKeyAddr = key_addr;
+EventHandlerResult Hlwm::onKeyswitchEvent(Key &mappedKey, KeyAddr keyAddr, uint8_t keyState) {
+    if (mappedKey != Key_LeftGui) {
+        return EventHandlerResult::OK;
     }
+    
+    if (keyIsPressed(keyState)) {
+        for (auto key_addr : KeyAddr::all()) {
+            Key k = Layer.lookupOnActiveLayer(key_addr);
+            for (int i = 0; i < sizeof(tag_keys) / sizeof(tag_keys[0]); i++) {
+                if (k == tag_keys[i]) {
+                    setTagColor(key_addr, i);
+                }
+            }
+        }
+    };
 
-    if ((k != layer_key) || (k == Key_NoKey) || (k.getFlags() != KEY_FLAGS)) {
-      ::LEDControl.refreshAt(KeyAddr(key_addr));
-    } else {
-      ::LEDControl.setCrgbAt(KeyAddr(key_addr), color);
-    }
-  }
-
-  if (cmdLayerToggleKeyAddr.isValid()) {
-    cRGB lock_color = breath_compute(lock_hue);
-    ::LEDControl.setCrgbAt(KeyAddr(cmdLayerToggleKeyAddr), lock_color);
-  }
-}
-
-EventHandlerResult Hlwm::afterEachCycle() {
-  if (!Layer.isActive(cmdLayer)) {
-    if (cmdActive) {
-      ::LEDControl.set_mode(::LEDControl.get_mode_index());
-      cmdActive = false;
-    }
-  } else {
-    if (!cmdActive)  {
-      cmdActive = true;
-    }
-    setKeyboardLEDColors();
-  }
-  return EventHandlerResult::OK;
+    return EventHandlerResult::OK;
 }
 
 }

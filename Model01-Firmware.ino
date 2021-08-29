@@ -535,8 +535,6 @@ void setup() {
   // While we hope to improve this in the future, the NumPad plugin
   // needs to be explicitly told which keymap layer is your numpad layer
   NumPad.numPadLayer = NUMPAD;
-  // same for Hlwm
-  Hlwm.cmdLayer = FUNCTION;
 
   // We configure the AlphaSquare effect to use RED letters
   AlphaSquare.color = CRGB(255, 0, 0);

@@ -30,19 +30,11 @@ class Hlwm : public kaleidoscope::Plugin {
  public:
   Hlwm(void) {}
 
-  static uint8_t cmdLayer;
   static cRGB color;
-  static uint8_t lock_hue;
-
-  EventHandlerResult onSetup(void);
-  EventHandlerResult afterEachCycle();
+  EventHandlerResult onKeyswitchEvent(Key &mapped_key, KeyAddr key_addr, uint8_t key_state);
 
  private:
-
-  void setKeyboardLEDColors(void);
-
-  static KeyAddr cmdLayerToggleKeyAddr;
-  static bool cmdActive;
+  void setTagColor(KeyAddr keyAddr, uint8_t tag);
 };
 }
 }
