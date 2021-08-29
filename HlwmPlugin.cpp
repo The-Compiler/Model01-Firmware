@@ -10,7 +10,7 @@ namespace kaleidoscope {
 namespace plugin {
 
 #define TAG_COUNT (sizeof(tagKeys) / sizeof(Key))
-static Key tagKeys[] = {Key_1, Key_2, Key_3, Key_4, Key_5, Key_6, Key_7, Key_8, Key_9, Key_0};
+static Key tagKeys[] = {Key_1, Key_2, Key_3, Key_4, Key_5, Key_6, Key_7, Key_8, Key_9};
 static KeyAddr tagKeyAddrs[TAG_COUNT];
 static char tagStatus[TAG_COUNT] = {};
 
@@ -21,12 +21,12 @@ static char tagStatus[TAG_COUNT] = {};
 #define TAG_CHAR_URGENT '!'
 // we should never see + and % if we use tag_status without specifying a monitor
 
-#define COLOR_IDX_EMPTY 0
-#define COLOR_IDX_USED 1
-#define COLOR_IDX_FOCUSED 2
-#define COLOR_IDX_UNFOCUSED 3
-#define COLOR_IDX_URGENT 4
-#define COLOR_IDX_UNKNOWN 5
+#define COLOR_IDX_EMPTY 0  // bg/black
+#define COLOR_IDX_USED 5  // purple
+#define COLOR_IDX_FOCUSED 6  // cyan
+#define COLOR_IDX_UNFOCUSED 2  // green
+#define COLOR_IDX_URGENT 1  // red
+#define COLOR_IDX_UNKNOWN 8  // grey
 
 #define FOCUS_COMMAND "hlwm.tagstatus"
 #define FOCUS_COMMAND_LEN (sizeof(FOCUS_COMMAND) - 1)
