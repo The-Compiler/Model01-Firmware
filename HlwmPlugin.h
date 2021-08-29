@@ -31,6 +31,7 @@ class Hlwm : public kaleidoscope::Plugin {
   Hlwm(void) {}
 
   static cRGB color;
+  EventHandlerResult onFocusEvent(const char *command);
   EventHandlerResult onKeyswitchEvent(Key &mapped_key, KeyAddr key_addr, uint8_t key_state);
   EventHandlerResult onSetup(void);
 

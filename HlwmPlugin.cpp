@@ -1,8 +1,10 @@
 #include <stdint.h>
+#include "Kaleidoscope.h"
 #include "HlwmPlugin.h"
 #include "kaleidoscope/layers.h"
 #include "kaleidoscope/keyswitch_state.h"
 #include "kaleidoscope/plugin/LED-Palette-Theme.h"
+#include "Kaleidoscope-FocusSerial.h"
 
 namespace kaleidoscope {
 namespace plugin {
@@ -10,7 +12,7 @@ namespace plugin {
 #define TAG_COUNT (sizeof(tagKeys) / sizeof(Key))
 static Key tagKeys[] = {Key_1, Key_2, Key_3, Key_4, Key_5, Key_6, Key_7, Key_8, Key_9, Key_0};
 static KeyAddr tagKeyAddrs[TAG_COUNT];
-static char tagStatus[TAG_COUNT];
+static char tagStatus[TAG_COUNT] = {'.', ':', '.', ':', '.', ':', '.', ':', '.', '!'};
 
 #define TAG_CHAR_EMPTY '.'
 #define TAG_CHAR_USED ':'
@@ -25,6 +27,9 @@ static char tagStatus[TAG_COUNT];
 #define COLOR_IDX_UNFOCUSED 3
 #define COLOR_IDX_URGENT 4
 #define COLOR_IDX_UNKNOWN 5
+
+#define FOCUS_COMMAND "hlwm.tagstatus"
+#define FOCUS_COMMAND_LEN (sizeof(FOCUS_COMMAND) - 1)
 
 void Hlwm::setTagColor(uint8_t tagIndex) {
     KeyAddr keyAddr = tagKeyAddrs[tagIndex];
@@ -56,7 +61,7 @@ EventHandlerResult Hlwm::onSetup(void) {
             }
         }
     }
-    memset(tagStatus, '?', TAG_COUNT);
+    //memset(tagStatus, '?', TAG_COUNT);
     return EventHandlerResult::OK;
 }
 
@@ -76,6 +81,21 @@ EventHandlerResult Hlwm::onKeyswitchEvent(Key &mappedKey, KeyAddr keyAddr, uint8
     }
 
     return EventHandlerResult::OK;
+}
+
+EventHandlerResult Hlwm::onFocusEvent(const char *command) {
+    if (::Focus.handleHelp(command, PSTR(FOCUS_COMMAND))) {
+        return EventHandlerResult::OK;
+    }
+
+    if (strncmp_P(command, PSTR(FOCUS_COMMAND), FOCUS_COMMAND_LEN) != 0) {
+        return EventHandlerResult::OK;
+    }
+
+    for (uint8_t i = 0; i < TAG_COUNT; i++) {
+        tagStatus[i] = Kaleidoscope.serialPort().read();
+    }
+    return EventHandlerResult::EVENT_CONSUMED;
 }
 
 }
