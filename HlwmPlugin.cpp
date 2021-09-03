@@ -69,16 +69,16 @@ EventHandlerResult Hlwm::onSetup(void) {
     return EventHandlerResult::OK;
 }
 
-EventHandlerResult Hlwm::onKeyswitchEvent(Key &mappedKey, KeyAddr keyAddr, uint8_t keyState) {
-    if (mappedKey != Key_LeftGui) {
+EventHandlerResult Hlwm::onKeyEvent(KeyEvent &event) {
+    if (event.key != Key_LeftGui) {
         return EventHandlerResult::OK;
     }
     
-    if (keyIsPressed(keyState)) {
+    if (keyIsPressed(event.state)) {
         for (int i = 0; i < TAG_COUNT; i++) {
             setTagColor(i);
         }
-    } else if (keyToggledOff(keyState)) {
+    } else if (keyToggledOff(event.state)) {
         for (int i = 0; i < TAG_COUNT; i++) {
             ::LEDControl.refreshAt(tagKeyAddrs[i]);
         }
