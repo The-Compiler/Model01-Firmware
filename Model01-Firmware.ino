@@ -3,7 +3,8 @@
 // See "LICENSE" for license details
 
 #ifndef BUILD_INFORMATION
-#define BUILD_INFORMATION "locally built"
+//#define BUILD_INFORMATION "custom-" __DATE__ "-" __TIME__
+#define BUILD_INFORMATION "locally built on " __DATE__ " at " __TIME__
 #endif
 
 
