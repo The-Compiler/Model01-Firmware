@@ -317,31 +317,17 @@ static void anyKeyMacro(KeyEvent &event) {
 }
 
 /** Macro to type umlauts using compose key. */
-static void umlautMacro(KeyEvent &event, char base) {
+static void umlautMacro(KeyEvent &event, char const *base) {
   if (!keyToggledOn(event.state)) {
     return;
   }
 
-  // FIXME can we do this in a saner way based on the char and Macros.type?
   // FIXME check whether shift is pressed?
-  Key key;
-  switch (base) {
-    case 'a':
-      key = Key_A;
-      break;
-    case 'o':
-      key = Key_O;
-      break;
-    case 'u':
-      key = Key_U;
-      break;
-  }
-
   Macros.tap(Key_PcApplication);
   Macros.press(Key_LeftShift);
   Macros.tap(Key_Quote);
   Macros.release(Key_LeftShift);
-  Macros.tap(key);
+  Macros.type(base);
 }
 
 
@@ -369,15 +355,15 @@ const macro_t *macroAction(uint8_t macro_id, KeyEvent &event) {
     break;
 
   case MACRO_AUML:
-    umlautMacro(event, 'a');
+    umlautMacro(event, PSTR("a"));
     break;
 
   case MACRO_OUML:
-    umlautMacro(event, 'o');
+    umlautMacro(event, PSTR("o"));
     break;
 
   case MACRO_UUML:
-    umlautMacro(event, 'u');
+    umlautMacro(event, PSTR("u"));
     break;
   }
   return MACRO_NONE;
