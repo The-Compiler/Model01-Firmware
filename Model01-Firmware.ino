@@ -322,12 +322,21 @@ static void umlautMacro(KeyEvent &event, char const *base) {
     return;
   }
 
-  // FIXME check whether shift is pressed?
   Macros.tap(Key_PcApplication);
-  Macros.press(Key_LeftShift);
-  Macros.tap(Key_Quote);
-  Macros.release(Key_LeftShift);
-  Macros.type(base);
+
+  auto keyboard = kaleidoscope::Runtime.hid().keyboard();
+  if (
+    keyboard.isModifierKeyActive(Key_LeftShift) ||
+    keyboard.isModifierKeyActive(Key_RightShift)
+  ) {
+    Macros.tap(Key_Quote);
+    Macros.type(base);
+  } else {
+    Macros.press(Key_LeftShift);
+    Macros.tap(Key_Quote);
+    Macros.release(Key_LeftShift);
+    Macros.type(base);
+  }
 }
 
 
