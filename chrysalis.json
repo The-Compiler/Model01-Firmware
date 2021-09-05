@@ -14,64 +14,39 @@
         ]
       },
       {
-        "code": 2078,
+        "code": 30,
         "label": {
-          "hint": null,
-          "base": "!"
-        },
-        "categories": [
-          "with-modifiers",
-          "shift"
-        ],
-        "baseCode": 30
+          "base": "1",
+          "shifted": "!"
+        }
       },
       {
-        "code": 2079,
+        "code": 31,
         "label": {
-          "hint": null,
-          "base": "@"
-        },
-        "categories": [
-          "with-modifiers",
-          "shift"
-        ],
-        "baseCode": 31
+          "base": "2",
+          "shifted": "@"
+        }
       },
       {
-        "code": 2080,
+        "code": 32,
         "label": {
-          "hint": null,
-          "base": "#"
-        },
-        "categories": [
-          "with-modifiers",
-          "shift"
-        ],
-        "baseCode": 32
+          "base": "3",
+          "shifted": "#"
+        }
       },
       {
-        "code": 2081,
+        "code": 33,
         "label": {
-          "hint": null,
-          "base": "$"
-        },
-        "categories": [
-          "with-modifiers",
-          "shift"
-        ],
-        "baseCode": 33
+          "base": "4",
+          "shifted": "$"
+        }
       },
       {
-        "code": 2082,
+        "code": 34,
         "label": {
-          "hint": null,
-          "base": "%"
-        },
-        "categories": [
-          "with-modifiers",
-          "shift"
-        ],
-        "baseCode": 34
+          "base": "5",
+          "shifted": "%"
+        }
       },
       {
         "code": 17152,
@@ -118,72 +93,47 @@
         ]
       },
       {
-        "code": 2083,
+        "code": 35,
         "label": {
-          "hint": null,
-          "base": "^"
-        },
-        "categories": [
-          "with-modifiers",
-          "shift"
-        ],
-        "baseCode": 35
+          "base": "6",
+          "shifted": "^"
+        }
       },
       {
-        "code": 2084,
+        "code": 36,
         "label": {
-          "hint": null,
-          "base": "&"
-        },
-        "categories": [
-          "with-modifiers",
-          "shift"
-        ],
-        "baseCode": 36
+          "base": "7",
+          "shifted": "&"
+        }
       },
       {
-        "code": 2085,
+        "code": 37,
         "label": {
-          "hint": null,
-          "base": "*"
-        },
-        "categories": [
-          "with-modifiers",
-          "shift"
-        ],
-        "baseCode": 37
+          "base": "8",
+          "shifted": "*"
+        }
       },
       {
-        "code": 2086,
+        "code": 38,
         "label": {
-          "hint": null,
-          "base": "("
-        },
-        "categories": [
-          "with-modifiers",
-          "shift"
-        ],
-        "baseCode": 38
+          "base": "9",
+          "shifted": "("
+        }
       },
       {
-        "code": 2087,
+        "code": 39,
         "label": {
-          "hint": null,
-          "base": ")"
-        },
-        "categories": [
-          "with-modifiers",
-          "shift"
-        ],
-        "baseCode": 39
+          "base": "0",
+          "shifted": ")"
+        }
       },
       {
-        "code": 17409,
+        "code": 17410,
         "label": {
           "hint": "LockTo",
-          "base": "#1"
+          "base": "#2"
         },
-        "target": 1,
+        "target": 2,
         "rangeStart": 17408,
         "categories": [
           "layer",
@@ -1347,11 +1297,16 @@
         }
       },
       {
-        "code": 39,
+        "code": 65535,
         "label": {
-          "base": "0",
-          "shifted": ")"
-        }
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
       },
       {
         "code": 65535,
@@ -1414,9 +1369,12 @@
         }
       },
       {
-        "code": 43,
+        "code": 76,
         "label": {
-          "base": "Tab"
+          "base": {
+            "full": "Delete",
+            "1u": "Del"
+          }
         }
       },
       {
@@ -1483,12 +1441,10 @@
         ]
       },
       {
-        "code": 76,
+        "code": 39,
         "label": {
-          "base": {
-            "full": "Delete",
-            "1u": "Del"
-          }
+          "base": "0",
+          "shifted": ")"
         }
       },
       {
@@ -3450,9 +3406,9 @@
   ],
   "colormaps": [
     [
+      6,
+      6,
       0,
-      0,
-      9,
       0,
       9,
       1,
@@ -3474,22 +3430,22 @@
       3,
       3,
       3,
-      0,
-      0,
-      0,
-      15,
-      15,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      15,
-      15,
-      0,
-      13,
-      0,
+      6,
+      6,
+      6,
+      6,
+      1,
+      3,
+      5,
+      6,
+      6,
+      5,
+      7,
+      1,
+      6,
+      6,
+      6,
+      6,
       5,
       5,
       5,
@@ -3506,14 +3462,14 @@
       4,
       4,
       4,
-      9,
+      0,
       1,
-      9,
-      9,
       0,
       9,
-      9,
-      9
+      6,
+      0,
+      0,
+      0
     ],
     [
       0,
@@ -3539,20 +3495,20 @@
       0,
       1,
       1,
+      5,
+      0,
+      0,
+      0,
+      6,
+      1,
       3,
+      5,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      5,
       8,
-      0,
-      0,
+      1,
+      6,
       0,
       0,
       0,
@@ -3570,11 +3526,11 @@
       0,
       0,
       1,
-      5,
+      1,
       5,
       6,
       6,
-      5,
+      3,
       0,
       0,
       0,
@@ -3582,15 +3538,15 @@
       0
     ],
     [
-      3,
-      3,
-      3,
+      6,
+      6,
+      6,
       0,
       1,
       0,
       2,
-      3,
-      3,
+      6,
+      6,
       5,
       13,
       1,
@@ -3608,35 +3564,35 @@
       8,
       4,
       4,
-      3,
+      6,
+      6,
       8,
       3,
-      0,
-      0,
+      5,
       8,
       8,
-      0,
+      5,
       4,
-      4,
-      0,
-      0,
-      0,
-      3,
       4,
       6,
+      0,
+      0,
+      6,
+      4,
+      3,
       4,
       1,
       1,
       0,
-      6,
+      3,
       4,
       4,
-      6,
+      3,
       2,
       1,
       1,
       4,
-      6,
+      3,
       4,
       5,
       2,
