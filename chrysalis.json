@@ -316,16 +316,16 @@
         ]
       },
       {
-        "code": 17451,
+        "code": 224,
         "label": {
-          "hint": "ShiftTo",
-          "base": "#1"
+          "base": {
+            "full": "Control",
+            "1u": "Ctrl"
+          }
         },
-        "target": 1,
-        "rangeStart": 17450,
+        "location": "left",
         "categories": [
-          "layer",
-          "shifttolayer"
+          "modifier"
         ]
       },
       {
@@ -438,29 +438,29 @@
         ]
       },
       {
-        "code": 228,
+        "code": 17451,
         "label": {
-          "base": {
-            "full": "Control",
-            "1u": "Ctrl"
-          }
+          "hint": "ShiftTo",
+          "base": "#1"
         },
-        "location": "right",
+        "target": 1,
+        "rangeStart": 17450,
         "categories": [
-          "modifier"
+          "layer",
+          "shifttolayer"
         ]
       },
       {
-        "code": 228,
+        "code": 17451,
         "label": {
-          "base": {
-            "full": "Control",
-            "1u": "Ctrl"
-          }
+          "hint": "ShiftTo",
+          "base": "#1"
         },
-        "location": "right",
+        "target": 1,
+        "rangeStart": 17450,
         "categories": [
-          "modifier"
+          "layer",
+          "shifttolayer"
         ]
       },
       {
@@ -3502,11 +3502,11 @@
       6,
       1,
       3,
-      5,
-      0,
-      0,
-      5,
       8,
+      0,
+      0,
+      8,
+      7,
       1,
       6,
       0,
