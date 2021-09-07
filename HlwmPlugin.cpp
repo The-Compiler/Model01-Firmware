@@ -28,6 +28,9 @@ static char tagStatus[TAG_COUNT] = {};
 #define COLOR_IDX_URGENT 1  // red
 #define COLOR_IDX_UNKNOWN 8  // grey
 
+// #define TRIGGER_KEY Key_LeftGui
+#define TRIGGER_LAYER 4
+
 #define FOCUS_COMMAND "hlwm.tagstatus"
 #define FOCUS_COMMAND_LEN (sizeof(FOCUS_COMMAND) - 1)
 
@@ -57,6 +60,18 @@ void Hlwm::setTagColor(uint8_t tagIndex) {
     ::LEDControl.setCrgbAt(KeyAddr(keyAddr), color);
 }
 
+void Hlwm::setTagColors() {
+    for (int i = 0; i < TAG_COUNT; i++) {
+        setTagColor(i);
+    }
+}
+
+void Hlwm::clearTagColors() {
+    for (int i = 0; i < TAG_COUNT; i++) {
+        ::LEDControl.refreshAt(tagKeyAddrs[i]);
+    }
+}
+
 EventHandlerResult Hlwm::onSetup(void) {
     for (int i = 0; i < TAG_COUNT; i++) {
         for (auto keyAddr : KeyAddr::all()) {
@@ -70,22 +85,33 @@ EventHandlerResult Hlwm::onSetup(void) {
 }
 
 EventHandlerResult Hlwm::onKeyEvent(KeyEvent &event) {
-    if (event.key != Key_LeftGui) {
+#ifdef TRIGGER_KEY
+    if (event.key != TRIGGER_KEY) {
         return EventHandlerResult::OK;
     }
     
     if (keyIsPressed(event.state)) {
-        for (int i = 0; i < TAG_COUNT; i++) {
-            setTagColor(i);
-        }
-    } else if (keyToggledOff(event.state)) {
-        for (int i = 0; i < TAG_COUNT; i++) {
-            ::LEDControl.refreshAt(tagKeyAddrs[i]);
-        }
+        setTagColors();
+    } else {
+        clearTagColors();
     }
-
+#endif
     return EventHandlerResult::OK;
 }
+
+
+EventHandlerResult Hlwm::onLayerChange() {
+#ifdef TRIGGER_LAYER
+    // FIXME: This won't work with refreshing LED effects, but doing it on every cycle seems bad too?
+    if (Layer.isActive(TRIGGER_LAYER)) {
+        setTagColors();
+    } else {
+        clearTagColors();
+    }
+#endif
+    return EventHandlerResult::OK;
+}
+
 
 EventHandlerResult Hlwm::onFocusEvent(const char *command) {
     if (::Focus.handleHelp(command, PSTR(FOCUS_COMMAND))) {

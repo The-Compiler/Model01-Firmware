@@ -33,10 +33,13 @@ class Hlwm : public kaleidoscope::Plugin {
   static cRGB color;
   EventHandlerResult onFocusEvent(const char *command);
   EventHandlerResult onKeyEvent(KeyEvent &event);
+  EventHandlerResult onLayerChange(void);
   EventHandlerResult onSetup(void);
 
  private:
   void setTagColor(uint8_t tag);
+  void setTagColors();
+  void clearTagColors();
 };
 }
 }
