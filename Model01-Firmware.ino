@@ -317,7 +317,7 @@ static void anyKeyMacro(KeyEvent &event) {
 }
 
 /** Macro to type umlauts using compose key. */
-static void umlautMacro(KeyEvent &event, char const *base) {
+static void umlautMacro(KeyEvent &event, Key base) {
   if (!keyToggledOn(event.state)) {
     return;
   }
@@ -330,12 +330,12 @@ static void umlautMacro(KeyEvent &event, char const *base) {
     keyboard.isModifierKeyActive(Key_RightShift)
   ) {
     Macros.tap(Key_Quote);
-    Macros.type(base);
+    Macros.tap(base);
   } else {
     Macros.press(Key_LeftShift);
     Macros.tap(Key_Quote);
     Macros.release(Key_LeftShift);
-    Macros.type(base);
+    Macros.tap(base);
   }
 }
 
@@ -364,15 +364,15 @@ const macro_t *macroAction(uint8_t macro_id, KeyEvent &event) {
     break;
 
   case MACRO_AUML:
-    umlautMacro(event, PSTR("a"));
+    umlautMacro(event, Key_A);
     break;
 
   case MACRO_OUML:
-    umlautMacro(event, PSTR("o"));
+    umlautMacro(event, Key_O);
     break;
 
   case MACRO_UUML:
-    umlautMacro(event, PSTR("u"));
+    umlautMacro(event, Key_U);
     break;
   }
   return MACRO_NONE;
