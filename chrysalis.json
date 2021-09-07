@@ -128,12 +128,12 @@
         }
       },
       {
-        "code": 17410,
+        "code": 17411,
         "label": {
           "hint": "LockTo",
-          "base": "#2"
+          "base": "#3"
         },
-        "target": 2,
+        "target": 3,
         "rangeStart": 17408,
         "categories": [
           "layer",
@@ -1321,16 +1321,15 @@
         ]
       },
       {
-        "code": 20546,
+        "code": 0,
         "label": {
-          "hint": {
-            "full": "Mouse Button",
-            "1u": "M.Btn"
-          },
-          "base": "Right"
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
         },
         "categories": [
-          "mousekeys"
+          "blanks"
         ]
       },
       {
@@ -1461,29 +1460,27 @@
         ]
       },
       {
-        "code": 20545,
+        "code": 0,
         "label": {
-          "hint": {
-            "full": "Mouse Button",
-            "1u": "M.Btn"
-          },
-          "base": "Left"
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
         },
         "categories": [
-          "mousekeys"
+          "blanks"
         ]
       },
       {
-        "code": 20552,
+        "code": 0,
         "label": {
-          "hint": {
-            "full": "Mouse Button",
-            "1u": "M.Btn"
-          },
-          "base": "Back"
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
         },
         "categories": [
-          "mousekeys"
+          "blanks"
         ]
       },
       {
@@ -1510,19 +1507,6 @@
         ]
       },
       {
-        "code": 20560,
-        "label": {
-          "hint": {
-            "full": "Mouse Button",
-            "1u": "M.Btn"
-          },
-          "base": "Forward"
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
         "code": 0,
         "label": {
           "base": {
@@ -1535,15 +1519,36 @@
         ]
       },
       {
+        "code": 2121,
+        "label": {
+          "hint": {
+            "full": "Shift+",
+            "1u": "S+"
+          },
+          "base": {
+            "full": "Insert",
+            "1u": "Ins"
+          }
+        },
+        "categories": [
+          "with-modifiers",
+          "shift"
+        ],
+        "baseCode": 73
+      },
+      {
         "code": 69,
         "label": {
           "base": "F12"
         }
       },
       {
-        "code": 74,
+        "code": 73,
         "label": {
-          "base": "Home"
+          "base": {
+            "full": "Insert",
+            "1u": "Ins"
+          }
         }
       },
       {
@@ -1703,12 +1708,6 @@
         ]
       },
       {
-        "code": 77,
-        "label": {
-          "base": "End"
-        }
-      },
-      {
         "code": 70,
         "label": {
           "base": {
@@ -1718,13 +1717,28 @@
         }
       },
       {
-        "code": 73,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Insert",
-            "1u": "Ins"
+            "full": "Blocked",
+            "1u": "Blkd"
           }
-        }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
       },
       {
         "code": 36,
@@ -1796,44 +1810,34 @@
         ]
       },
       {
-        "code": 20484,
+        "code": 74,
         "label": {
-          "hint": "Mouse",
-          "base": "Left"
-        },
-        "categories": [
-          "mousekeys"
-        ]
+          "base": "Home"
+        }
       },
       {
-        "code": 20482,
+        "code": 78,
         "label": {
-          "hint": "Mouse",
-          "base": "Down"
-        },
-        "categories": [
-          "mousekeys"
-        ]
+          "base": {
+            "full": "Page Down",
+            "1u": "PgDn"
+          }
+        }
       },
       {
-        "code": 20481,
+        "code": 75,
         "label": {
-          "hint": "Mouse",
-          "base": "Up"
-        },
-        "categories": [
-          "mousekeys"
-        ]
+          "base": {
+            "full": "Page Up",
+            "1u": "PgUp"
+          }
+        }
       },
       {
-        "code": 20488,
+        "code": 77,
         "label": {
-          "hint": "Mouse",
-          "base": "Right"
-        },
-        "categories": [
-          "mousekeys"
-        ]
+          "base": "End"
+        }
       },
       {
         "code": 18658,
@@ -1961,15 +1965,16 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 20546,
         "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
+          "hint": {
+            "full": "Mouse Button",
+            "1u": "M.Btn"
+          },
+          "base": "Right"
         },
         "categories": [
-          "blanks"
+          "mousekeys"
         ]
       },
       {
@@ -2057,6 +2062,32 @@
         ]
       },
       {
+        "code": 20500,
+        "label": {
+          "hint": {
+            "full": "Mouse Wheel",
+            "1u": "M.Whl"
+          },
+          "base": "Left"
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
+        "code": 20504,
+        "label": {
+          "hint": {
+            "full": "Mouse Wheel",
+            "1u": "M.Whl"
+          },
+          "base": "Right"
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
         "code": 65535,
         "label": {
           "base": {
@@ -2066,6 +2097,464 @@
         },
         "categories": [
           "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 20548,
+        "label": {
+          "hint": {
+            "full": "Mouse Button",
+            "1u": "M.Btn"
+          },
+          "base": "Middle"
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 20517,
+        "label": {
+          "hint": {
+            "full": "Mouse Warp",
+            "1u": "Warp"
+          },
+          "base": {
+            "full": "North-West",
+            "1u": "NW"
+          }
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
+        "code": 20521,
+        "label": {
+          "hint": {
+            "full": "Mouse Warp",
+            "1u": "Warp"
+          },
+          "base": {
+            "full": "North-East",
+            "1u": "NE"
+          }
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
+        "code": 20497,
+        "label": {
+          "hint": {
+            "full": "Mouse Wheel",
+            "1u": "M.Whl"
+          },
+          "base": "Up"
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 20552,
+        "label": {
+          "hint": {
+            "full": "Mouse Button",
+            "1u": "M.Btn"
+          },
+          "base": "Back"
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
+        "code": 20545,
+        "label": {
+          "hint": {
+            "full": "Mouse Button",
+            "1u": "M.Btn"
+          },
+          "base": "Left"
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 20484,
+        "label": {
+          "hint": "Mouse",
+          "base": "Left"
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
+        "code": 20482,
+        "label": {
+          "hint": "Mouse",
+          "base": "Down"
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
+        "code": 20481,
+        "label": {
+          "hint": "Mouse",
+          "base": "Up"
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
+        "code": 20488,
+        "label": {
+          "hint": "Mouse",
+          "base": "Right"
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
+        "code": 20518,
+        "label": {
+          "hint": {
+            "full": "Mouse Warp",
+            "1u": "Warp"
+          },
+          "base": {
+            "full": "South-West",
+            "1u": "SW"
+          }
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
+        "code": 20522,
+        "label": {
+          "hint": {
+            "full": "Mouse Warp",
+            "1u": "Warp"
+          },
+          "base": {
+            "full": "South-East",
+            "1u": "SE"
+          }
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
+        "code": 20498,
+        "label": {
+          "hint": {
+            "full": "Mouse Wheel",
+            "1u": "M.Whl"
+          },
+          "base": "Down"
+        },
+        "categories": [
+          "mousekeys"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 20560,
+        "label": {
+          "hint": {
+            "full": "Mouse Button",
+            "1u": "M.Btn"
+          },
+          "base": "Forward"
+        },
+        "categories": [
+          "mousekeys"
         ]
       },
       {
@@ -2153,483 +2642,16 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 20576,
         "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
+          "hint": {
+            "full": "Mouse Warp",
+            "1u": "Warp"
+          },
+          "base": "End"
         },
         "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
+          "mousekeys"
         ]
       }
     ],
@@ -3545,10 +3567,10 @@
       1,
       0,
       2,
-      6,
-      6,
+      0,
+      0,
       5,
-      13,
+      5,
       1,
       1,
       8,
@@ -3575,28 +3597,28 @@
       8,
       1,
       6,
-      4,
-      4,
+      0,
+      0,
       6,
-      4,
+      6,
       3,
-      4,
+      0,
       1,
       1,
       0,
       3,
-      4,
-      4,
+      6,
+      6,
       3,
       2,
       1,
       1,
-      4,
+      0,
       3,
-      4,
+      6,
       5,
       2,
-      0,
+      2,
       1,
       1,
       1,
@@ -3604,70 +3626,70 @@
       5
     ],
     [
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15,
-      15
+      3,
+      3,
+      3,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      13,
+      0,
+      0,
+      0,
+      7,
+      7,
+      7,
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      2,
+      2,
+      0,
+      8,
+      2,
+      2,
+      2
     ],
     [
       15,
