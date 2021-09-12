@@ -1542,11 +1542,11 @@
         }
       },
       {
-        "code": 73,
+        "code": 70,
         "label": {
           "base": {
-            "full": "Insert",
-            "1u": "Ins"
+            "full": "Print Screen",
+            "1u": "PrSc"
           }
         }
       },
@@ -1707,25 +1707,31 @@
         ]
       },
       {
-        "code": 70,
+        "code": 2121,
         "label": {
+          "hint": {
+            "full": "Shift+",
+            "1u": "S+"
+          },
           "base": {
-            "full": "Print Screen",
-            "1u": "PrSc"
-          }
-        }
-      },
-      {
-        "code": 0,
-        "label": {
-          "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
+            "full": "Insert",
+            "1u": "Ins"
           }
         },
         "categories": [
-          "blanks"
-        ]
+          "with-modifiers",
+          "shift"
+        ],
+        "baseCode": 73
+      },
+      {
+        "code": 73,
+        "label": {
+          "base": {
+            "full": "Insert",
+            "1u": "Ins"
+          }
+        }
       },
       {
         "code": 0,
@@ -3668,7 +3674,7 @@
       1,
       0,
       2,
-      0,
+      6,
       0,
       5,
       5,
