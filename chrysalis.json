@@ -1744,16 +1744,11 @@
         }
       },
       {
-        "code": 0,
+        "code": 45,
         "label": {
-          "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
+          "base": "-",
+          "shifted": "_"
+        }
       },
       {
         "code": 36,
@@ -3685,7 +3680,7 @@
       0,
       2,
       6,
-      0,
+      8,
       5,
       5,
       1,
