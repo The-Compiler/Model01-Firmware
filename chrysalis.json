@@ -712,11 +712,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -724,11 +724,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -874,11 +874,11 @@
         "baseCode": 36
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -1061,11 +1061,11 @@
         "baseCode": 46
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -1243,11 +1243,11 @@
         "baseCode": 53
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -3629,22 +3629,22 @@
       5,
       1,
       5,
-      0,
-      0,
+      6,
+      6,
       0,
       6,
       1,
       3,
       7,
-      0,
-      0,
+      8,
+      8,
       7,
       0,
       1,
       6,
       0,
-      0,
-      0,
+      6,
+      6,
       1,
       1,
       5,
