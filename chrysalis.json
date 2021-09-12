@@ -1299,13 +1299,16 @@
         }
       },
       {
-        "code": 42,
+        "code": 2099,
         "label": {
-          "base": {
-            "full": "Backspace",
-            "1u": "Bksp"
-          }
-        }
+          "hint": null,
+          "base": ":"
+        },
+        "categories": [
+          "with-modifiers",
+          "shift"
+        ],
+        "baseCode": 51
       },
       {
         "code": 65535,
@@ -1332,15 +1335,16 @@
         ]
       },
       {
-        "code": 0,
+        "code": 20497,
         "label": {
-          "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
-          }
+          "hint": {
+            "full": "Mouse Wheel",
+            "1u": "M.Whl"
+          },
+          "base": "Up"
         },
         "categories": [
-          "blanks"
+          "mousekeys"
         ]
       },
       {
@@ -1439,23 +1443,10 @@
         }
       },
       {
-        "code": 20497,
+        "code": 55,
         "label": {
-          "hint": {
-            "full": "Mouse Wheel",
-            "1u": "M.Whl"
-          },
-          "base": "Up"
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
-        "code": 39,
-        "label": {
-          "base": "0",
-          "shifted": ")"
+          "base": ".",
+          "shifted": ">"
         }
       },
       {
@@ -1471,11 +1462,11 @@
         ]
       },
       {
-        "code": 0,
+        "code": 65535,
         "label": {
           "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
+            "full": "Transparent",
+            "1u": " "
           }
         },
         "categories": [
@@ -1483,16 +1474,22 @@
         ]
       },
       {
-        "code": 0,
+        "code": 65535,
         "label": {
           "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
+            "full": "Transparent",
+            "1u": " "
           }
         },
         "categories": [
           "blanks"
         ]
+      },
+      {
+        "code": 101,
+        "label": {
+          "base": "Menu"
+        }
       },
       {
         "code": 0,
@@ -1530,22 +1527,16 @@
         ]
       },
       {
-        "code": 2121,
+        "code": 0,
         "label": {
-          "hint": {
-            "full": "Shift+",
-            "1u": "S+"
-          },
           "base": {
-            "full": "Insert",
-            "1u": "Ins"
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
-          "with-modifiers",
-          "shift"
-        ],
-        "baseCode": 73
+          "blanks"
+        ]
       },
       {
         "code": 69,
@@ -1612,6 +1603,37 @@
         }
       },
       {
+        "code": 39,
+        "label": {
+          "base": "0",
+          "shifted": ")"
+        }
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
         "code": 20498,
         "label": {
           "hint": {
@@ -1623,36 +1645,6 @@
         "categories": [
           "mousekeys"
         ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 101,
-        "label": {
-          "base": "Menu"
-        }
       },
       {
         "code": 80,
@@ -3703,11 +3695,11 @@
       8,
       8,
       8,
-      4,
-      4,
-      6,
-      6,
       8,
+      8,
+      8,
+      6,
+      1,
       3,
       5,
       0,
@@ -3716,12 +3708,12 @@
       8,
       1,
       6,
-      0,
-      0,
+      4,
       6,
+      4,
       6,
       3,
-      0,
+      6,
       1,
       1,
       0,
@@ -3737,7 +3729,7 @@
       6,
       5,
       2,
-      2,
+      0,
       1,
       1,
       1,
