@@ -325,16 +325,19 @@
         ]
       },
       {
-        "code": 17452,
+        "code": 49162,
         "label": {
-          "hint": "ShiftTo",
-          "base": "#2"
+          "hint": {
+            "full": "OneShot",
+            "1u": "OSL"
+          },
+          "base": "#1"
         },
-        "target": 2,
-        "rangeStart": 17450,
+        "target": 1,
+        "rangeStart": 49161,
         "categories": [
           "layer",
-          "shifttolayer"
+          "oneshot"
         ]
       },
       {
@@ -438,16 +441,19 @@
         }
       },
       {
-        "code": 17451,
+        "code": 49163,
         "label": {
-          "hint": "ShiftTo",
-          "base": "#1"
+          "hint": {
+            "full": "OneShot",
+            "1u": "OSL"
+          },
+          "base": "#2"
         },
-        "target": 1,
-        "rangeStart": 17450,
+        "target": 2,
+        "rangeStart": 49161,
         "categories": [
           "layer",
-          "shifttolayer"
+          "oneshot"
         ]
       },
       {
@@ -477,16 +483,19 @@
         ]
       },
       {
-        "code": 17451,
+        "code": 49163,
         "label": {
-          "hint": "ShiftTo",
-          "base": "#1"
+          "hint": {
+            "full": "OneShot",
+            "1u": "OSL"
+          },
+          "base": "#2"
         },
-        "target": 1,
-        "rangeStart": 17450,
+        "target": 2,
+        "rangeStart": 49161,
         "categories": [
           "layer",
-          "shifttolayer"
+          "oneshot"
         ]
       },
       {
@@ -3637,10 +3646,10 @@
       1,
       3,
       7,
-      8,
-      8,
-      7,
       0,
+      0,
+      7,
+      8,
       1,
       6,
       8,
@@ -3703,10 +3712,10 @@
       1,
       3,
       5,
-      0,
-      0,
-      5,
       8,
+      8,
+      5,
+      0,
       1,
       6,
       4,
