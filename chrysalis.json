@@ -875,10 +875,10 @@
         }
       },
       {
-        "code": 46,
+        "code": 53,
         "label": {
-          "base": "=",
-          "shifted": "+"
+          "base": "`",
+          "shifted": "~"
         }
       },
       {
@@ -930,16 +930,11 @@
         "baseCode": 32
       },
       {
-        "code": 2085,
+        "code": 52,
         "label": {
-          "hint": null,
-          "base": "*"
-        },
-        "categories": [
-          "with-modifiers",
-          "shift"
-        ],
-        "baseCode": 37
+          "base": "'",
+          "shifted": "\""
+        }
       },
       {
         "code": 2095,
@@ -1057,11 +1052,16 @@
         "baseCode": 39
       },
       {
-        "code": 53,
+        "code": 2100,
         "label": {
-          "base": "`",
-          "shifted": "~"
-        }
+          "hint": null,
+          "base": "\""
+        },
+        "categories": [
+          "with-modifiers",
+          "shift"
+        ],
+        "baseCode": 52
       },
       {
         "code": 2094,
@@ -1124,28 +1124,23 @@
         "baseCode": 33
       },
       {
-        "code": 2102,
+        "code": 2085,
         "label": {
           "hint": null,
-          "base": "<"
+          "base": "*"
         },
         "categories": [
           "with-modifiers",
           "shift"
         ],
-        "baseCode": 54
+        "baseCode": 37
       },
       {
-        "code": 2103,
+        "code": 46,
         "label": {
-          "hint": null,
-          "base": ">"
-        },
-        "categories": [
-          "with-modifiers",
-          "shift"
-        ],
-        "baseCode": 55
+          "base": "=",
+          "shifted": "+"
+        }
       },
       {
         "code": 2099,
@@ -1215,23 +1210,28 @@
         }
       },
       {
-        "code": 2100,
+        "code": 2102,
         "label": {
           "hint": null,
-          "base": "\""
+          "base": "<"
         },
         "categories": [
           "with-modifiers",
           "shift"
         ],
-        "baseCode": 52
+        "baseCode": 54
       },
       {
-        "code": 52,
+        "code": 2103,
         "label": {
-          "base": "'",
-          "shifted": "\""
-        }
+          "hint": null,
+          "base": ">"
+        },
+        "categories": [
+          "with-modifiers",
+          "shift"
+        ],
+        "baseCode": 55
       },
       {
         "code": 2082,
@@ -3623,14 +3623,14 @@
       3,
       3,
       3,
-      1,
+      5,
       3,
       0,
       0,
       4,
       2,
-      2,
-      2,
+      1,
+      1,
       2,
       4,
       0,
@@ -3661,13 +3661,13 @@
       0,
       2,
       2,
-      5,
-      5,
+      2,
+      2,
       2,
       2,
       0,
       0,
-      1,
+      5,
       5,
       1,
       3,
