@@ -775,17 +775,17 @@
         "baseCode": 49
       },
       {
-        "code": 56,
-        "label": {
-          "base": "/",
-          "shifted": "?"
-        }
-      },
-      {
         "code": 49,
         "label": {
           "base": "\\",
           "shifted": "|"
+        }
+      },
+      {
+        "code": 56,
+        "label": {
+          "base": "/",
+          "shifted": "?"
         }
       },
       {
