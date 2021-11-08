@@ -2840,6 +2840,21 @@
         "baseCode": 36
       },
       {
+        "code": 4133,
+        "label": {
+          "hint": {
+            "full": "Super+",
+            "1u": "Su+"
+          },
+          "base": "8"
+        },
+        "categories": [
+          "with-modifiers",
+          "gui"
+        ],
+        "baseCode": 37
+      },
+      {
         "code": 4134,
         "label": {
           "hint": {
@@ -2853,21 +2868,6 @@
           "gui"
         ],
         "baseCode": 38
-      },
-      {
-        "code": 4135,
-        "label": {
-          "hint": {
-            "full": "Super+",
-            "1u": "Su+"
-          },
-          "base": "0"
-        },
-        "categories": [
-          "with-modifiers",
-          "gui"
-        ],
-        "baseCode": 39
       },
       {
         "code": 0,
