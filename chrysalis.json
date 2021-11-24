@@ -1495,39 +1495,31 @@
         ]
       },
       {
-        "code": 80,
+        "code": 11,
         "label": {
-          "base": {
-            "full": "Left Arrow",
-            "1u": "←"
-          }
+          "base": "h",
+          "shifted": "H"
         }
       },
       {
-        "code": 81,
+        "code": 13,
         "label": {
-          "base": {
-            "full": "Down Arrow",
-            "1u": "↓"
-          }
+          "base": "j",
+          "shifted": "J"
         }
       },
       {
-        "code": 82,
+        "code": 14,
         "label": {
-          "base": {
-            "full": "Up Arrow",
-            "1u": "↑"
-          }
+          "base": "k",
+          "shifted": "K"
         }
       },
       {
-        "code": 79,
+        "code": 15,
         "label": {
-          "base": {
-            "full": "Right Arrow",
-            "1u": "→"
-          }
+          "base": "l",
+          "shifted": "L"
         }
       },
       {
@@ -1644,31 +1636,39 @@
         ]
       },
       {
-        "code": 11,
+        "code": 80,
         "label": {
-          "base": "h",
-          "shifted": "H"
+          "base": {
+            "full": "Left Arrow",
+            "1u": "←"
+          }
         }
       },
       {
-        "code": 13,
+        "code": 81,
         "label": {
-          "base": "j",
-          "shifted": "J"
+          "base": {
+            "full": "Down Arrow",
+            "1u": "↓"
+          }
         }
       },
       {
-        "code": 14,
+        "code": 82,
         "label": {
-          "base": "k",
-          "shifted": "K"
+          "base": {
+            "full": "Up Arrow",
+            "1u": "↑"
+          }
         }
       },
       {
-        "code": 15,
+        "code": 79,
         "label": {
-          "base": "l",
-          "shifted": "L"
+          "base": {
+            "full": "Right Arrow",
+            "1u": "→"
+          }
         }
       },
       {
@@ -3697,20 +3697,20 @@
       6,
       4,
       6,
-      2,
-      3,
-      1,
-      1,
       3,
       2,
+      1,
+      1,
+      2,
+      3,
       6,
       6,
-      2,
-      3,
-      1,
-      1,
       3,
       2,
+      1,
+      1,
+      2,
+      3,
       6,
       5,
       0,
