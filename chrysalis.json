@@ -142,16 +142,13 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 70,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Print Screen",
+            "1u": "PrSc"
           }
-        },
-        "categories": [
-          "blanks"
-        ]
+        }
       },
       {
         "code": 20,
@@ -526,13 +523,16 @@
         }
       },
       {
-        "code": 70,
+        "code": 65535,
         "label": {
           "base": {
-            "full": "Print Screen",
-            "1u": "PrSc"
+            "full": "Transparent",
+            "1u": " "
           }
-        }
+        },
+        "categories": [
+          "blanks"
+        ]
       },
       {
         "code": 65535,
@@ -745,11 +745,11 @@
         ]
       },
       {
-        "code": 0,
+        "code": 65535,
         "label": {
           "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
+            "full": "Transparent",
+            "1u": " "
           }
         },
         "categories": [
@@ -3218,16 +3218,19 @@
         ]
       },
       {
-        "code": 0,
+        "code": 4136,
         "label": {
-          "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
-          }
+          "hint": {
+            "full": "Super+",
+            "1u": "Su+"
+          },
+          "base": "Enter"
         },
         "categories": [
-          "blanks"
-        ]
+          "with-modifiers",
+          "gui"
+        ],
+        "baseCode": 40
       },
       {
         "code": 0,
@@ -3538,7 +3541,7 @@
     [
       6,
       6,
-      0,
+      6,
       0,
       1,
       1,
@@ -3592,7 +3595,7 @@
       4,
       4,
       4,
-      1,
+      0,
       1,
       1,
       1,
@@ -3604,7 +3607,7 @@
     [
       0,
       0,
-      0,
+      8,
       0,
       0,
       3,
@@ -3834,7 +3837,7 @@
       0,
       0,
       7,
-      0,
+      4,
       1,
       6,
       0,
