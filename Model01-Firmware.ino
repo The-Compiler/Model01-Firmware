@@ -77,7 +77,10 @@
 #include "Kaleidoscope-USB-Quirks.h"
 
 // One Shot Layer
-#include "Kaleidoscope-OneShot.h"
+// #include "Kaleidoscope-OneShot.h"
+
+// Dual-Use key
+#include "Kaleidoscope-Qukeys.h"
 
 // Custom HLWM plugin
 #include "HlwmPlugin.h"
@@ -571,7 +574,10 @@ KALEIDOSCOPE_INIT_PLUGINS(
   // NumPad,
 
   // Support for one shot layers
-  OneShot,
+  // OneShot,
+
+  // Support for dual-use keys
+  Qukeys,
 
   // The macros plugin adds support for macros
   Macros,
@@ -644,7 +650,10 @@ void setup() {
   ColormapEffect.max_layers(5);
 
   // Slower symbol typing (for now)
-  OneShot.setTimeout(5000);
+  // OneShot.setTimeout(5000);
+
+  // Faster LED reaction for Qukeys
+  Qukeys.setHoldTimeout(125);
 }
 
 /** loop is the second of the standard Arduino sketch functions.
