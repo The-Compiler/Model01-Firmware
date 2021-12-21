@@ -327,17 +327,16 @@
         ]
       },
       {
-        "code": 51514,
-        "baseCode": 40,
+        "code": 17451,
         "label": {
-          "hint": "Layer #1/",
-          "base": "Enter"
+          "hint": "ShiftTo",
+          "base": "#1"
         },
         "target": 1,
-        "rangeStart": 51218,
+        "rangeStart": 17450,
         "categories": [
           "layer",
-          "dualuse"
+          "shifttolayer"
         ]
       },
       {
@@ -469,16 +468,18 @@
         ]
       },
       {
-        "code": 228,
+        "code": 49209,
+        "baseCode": 40,
         "label": {
-          "base": {
-            "full": "Control",
-            "1u": "Ctrl"
-          }
+          "hint": "Control/",
+          "base": "Enter"
         },
-        "location": "right",
+        "modifier": "Control",
+        "rangeStart": 49169,
         "categories": [
-          "modifier"
+          "modifier",
+          "dualuse",
+          "ctrl"
         ]
       },
       {
@@ -1355,16 +1356,15 @@
         ]
       },
       {
-        "code": 20497,
+        "code": 0,
         "label": {
-          "hint": {
-            "full": "Mouse Wheel",
-            "1u": "M.Whl"
-          },
-          "base": "Up"
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
         },
         "categories": [
-          "mousekeys"
+          "blanks"
         ]
       },
       {
@@ -1635,16 +1635,15 @@
         ]
       },
       {
-        "code": 20498,
+        "code": 65535,
         "label": {
-          "hint": {
-            "full": "Mouse Wheel",
-            "1u": "M.Whl"
-          },
-          "base": "Down"
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
         },
         "categories": [
-          "mousekeys"
+          "blanks"
         ]
       },
       {
@@ -3708,9 +3707,9 @@
       0,
       1,
       6,
-      4,
+      0,
       6,
-      4,
+      6,
       6,
       3,
       2,
