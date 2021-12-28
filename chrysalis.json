@@ -142,11 +142,11 @@
         ]
       },
       {
-        "code": 70,
+        "code": 75,
         "label": {
           "base": {
-            "full": "Print Screen",
-            "1u": "PrSc"
+            "full": "Page Up",
+            "1u": "PgUp"
           }
         }
       },
@@ -241,33 +241,35 @@
         }
       },
       {
-        "code": 24580,
-        "label": {
-          "hint": "Macro",
-          "base": "#4"
-        },
-        "rangeStart": 24576,
-        "categories": [
-          "macros"
-        ]
-      },
-      {
-        "code": 24578,
-        "label": {
-          "hint": "Macro",
-          "base": "#2"
-        },
-        "rangeStart": 24576,
-        "categories": [
-          "macros"
-        ]
-      },
-      {
-        "code": 75,
+        "code": 65535,
         "label": {
           "base": {
-            "full": "Page Up",
-            "1u": "PgUp"
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 78,
+        "label": {
+          "base": {
+            "full": "Page Down",
+            "1u": "PgDn"
           }
         }
       },
@@ -378,29 +380,35 @@
         }
       },
       {
-        "code": 18,
+        "code": 65535,
         "label": {
-          "base": "o",
-          "shifted": "O"
-        }
-      },
-      {
-        "code": 24579,
-        "label": {
-          "hint": "Macro",
-          "base": "#3"
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
         },
-        "rangeStart": 24576,
         "categories": [
-          "macros"
+          "blanks"
         ]
       },
       {
-        "code": 78,
+        "code": 65535,
         "label": {
           "base": {
-            "full": "Page Down",
-            "1u": "PgDn"
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 70,
+        "label": {
+          "base": {
+            "full": "Print Screen",
+            "1u": "PrSc"
           }
         }
       },
@@ -1279,57 +1287,88 @@
     ],
     [
       {
-        "code": 24581,
+        "code": 0,
         "label": {
-          "hint": "Macro",
-          "base": "#5"
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
         },
-        "rangeStart": 24576,
         "categories": [
-          "macros"
+          "blanks"
         ]
       },
       {
-        "code": 58,
+        "code": 0,
         "label": {
-          "base": "F1"
-        }
-      },
-      {
-        "code": 59,
-        "label": {
-          "base": "F2"
-        }
-      },
-      {
-        "code": 60,
-        "label": {
-          "base": "F3"
-        }
-      },
-      {
-        "code": 61,
-        "label": {
-          "base": "F4"
-        }
-      },
-      {
-        "code": 62,
-        "label": {
-          "base": "F5"
-        }
-      },
-      {
-        "code": 2099,
-        "label": {
-          "hint": null,
-          "base": ":"
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
         },
         "categories": [
-          "with-modifiers",
-          "shift"
-        ],
-        "baseCode": 51
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
       },
       {
         "code": 65535,
@@ -1368,40 +1407,76 @@
         ]
       },
       {
-        "code": 63,
+        "code": 0,
         "label": {
-          "base": "F6"
-        }
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
       },
       {
-        "code": 64,
+        "code": 0,
         "label": {
-          "base": "F7"
-        }
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
       },
       {
-        "code": 65,
+        "code": 0,
         "label": {
-          "base": "F8"
-        }
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
       },
       {
-        "code": 66,
+        "code": 0,
         "label": {
-          "base": "F9"
-        }
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
       },
       {
-        "code": 67,
+        "code": 0,
         "label": {
-          "base": "F10"
-        }
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
       },
       {
-        "code": 68,
+        "code": 0,
         "label": {
-          "base": "F11"
-        }
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
       },
       {
         "code": 76,
@@ -1413,20 +1488,15 @@
         }
       },
       {
-        "code": 18543,
-        "legacyCode": 23663,
+        "code": 0,
         "label": {
-          "hint": {
-            "full": "Brightness",
-            "1u": "Brght."
-          },
           "base": {
-            "full": "Up",
-            "1u": "🔆"
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
-          "consumer"
+          "blanks"
         ]
       },
       {
@@ -1458,11 +1528,16 @@
         }
       },
       {
-        "code": 55,
+        "code": 0,
         "label": {
-          "base": ".",
-          "shifted": ">"
-        }
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
       },
       {
         "code": 65535,
@@ -1474,6 +1549,172 @@
         },
         "categories": [
           "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 65535,
+        "label": {
+          "base": {
+            "full": "Transparent",
+            "1u": " "
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 24580,
+        "label": {
+          "hint": "Macro",
+          "base": "#4"
+        },
+        "rangeStart": 24576,
+        "categories": [
+          "macros"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 24578,
+        "label": {
+          "hint": "Macro",
+          "base": "#2"
+        },
+        "rangeStart": 24576,
+        "categories": [
+          "macros"
+        ]
+      },
+      {
+        "code": 55,
+        "label": {
+          "base": ".",
+          "shifted": ">"
+        }
+      },
+      {
+        "code": 33,
+        "label": {
+          "base": "4",
+          "shifted": "$"
+        }
+      },
+      {
+        "code": 34,
+        "label": {
+          "base": "5",
+          "shifted": "%"
+        }
+      },
+      {
+        "code": 35,
+        "label": {
+          "base": "6",
+          "shifted": "^"
+        }
+      },
+      {
+        "code": 39,
+        "label": {
+          "base": "0",
+          "shifted": ")"
+        }
+      },
+      {
+        "code": 17453,
+        "label": {
+          "hint": "ShiftTo",
+          "base": "#3"
+        },
+        "target": 3,
+        "rangeStart": 17450,
+        "categories": [
+          "layer",
+          "shifttolayer"
         ]
       },
       {
@@ -1529,158 +1770,15 @@
         }
       },
       {
-        "code": 0,
+        "code": 24579,
         "label": {
-          "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
-          }
+          "hint": "Macro",
+          "base": "#3"
         },
+        "rangeStart": 24576,
         "categories": [
-          "blanks"
+          "macros"
         ]
-      },
-      {
-        "code": 69,
-        "label": {
-          "base": "F12"
-        }
-      },
-      {
-        "code": 0,
-        "label": {
-          "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 18544,
-        "legacyCode": 23664,
-        "label": {
-          "hint": {
-            "full": "Brightness",
-            "1u": "Brght."
-          },
-          "base": {
-            "full": "Down",
-            "1u": "🔅"
-          }
-        },
-        "categories": [
-          "consumer"
-        ]
-      },
-      {
-        "code": 55,
-        "label": {
-          "base": ".",
-          "shifted": ">"
-        }
-      },
-      {
-        "code": 33,
-        "label": {
-          "base": "4",
-          "shifted": "$"
-        }
-      },
-      {
-        "code": 34,
-        "label": {
-          "base": "5",
-          "shifted": "%"
-        }
-      },
-      {
-        "code": 35,
-        "label": {
-          "base": "6",
-          "shifted": "^"
-        }
-      },
-      {
-        "code": 39,
-        "label": {
-          "base": "0",
-          "shifted": ")"
-        }
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 80,
-        "label": {
-          "base": {
-            "full": "Left Arrow",
-            "1u": "←"
-          }
-        }
-      },
-      {
-        "code": 81,
-        "label": {
-          "base": {
-            "full": "Down Arrow",
-            "1u": "↓"
-          }
-        }
-      },
-      {
-        "code": 82,
-        "label": {
-          "base": {
-            "full": "Up Arrow",
-            "1u": "↑"
-          }
-        }
-      },
-      {
-        "code": 79,
-        "label": {
-          "base": {
-            "full": "Right Arrow",
-            "1u": "→"
-          }
-        }
       },
       {
         "code": 0,
@@ -1692,23 +1790,6 @@
         },
         "categories": [
           "blanks"
-        ]
-      },
-      {
-        "code": 18665,
-        "legacyCode": 23785,
-        "label": {
-          "hint": {
-            "full": "Volume",
-            "1u": "Vol."
-          },
-          "base": {
-            "full": "Up",
-            "1u": "🔊"
-          }
-        },
-        "categories": [
-          "consumer"
         ]
       },
       {
@@ -1845,40 +1926,37 @@
         }
       },
       {
-        "code": 18658,
-        "legacyCode": 19682,
+        "code": 0,
         "label": {
-          "base": "Mute"
-        },
-        "categories": [
-          "consumer"
-        ]
-      },
-      {
-        "code": 18666,
-        "legacyCode": 23786,
-        "label": {
-          "hint": {
-            "full": "Volume",
-            "1u": "Vol."
-          },
           "base": {
-            "full": "Down",
-            "1u": "🔉"
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
-          "consumer"
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
         ]
       }
     ],
     [
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -1886,11 +1964,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -1898,11 +1976,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -1910,11 +1988,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -1922,11 +2000,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -1934,11 +2012,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -1946,41 +2024,10 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 69,
         "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 20546,
-        "label": {
-          "hint": {
-            "full": "Mouse Button",
-            "1u": "M.Btn"
-          },
-          "base": "Right"
-        },
-        "categories": [
-          "mousekeys"
-        ]
+          "base": "F12"
+        }
       },
       {
         "code": 65535,
@@ -2007,11 +2054,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2019,11 +2066,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2031,11 +2078,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2043,11 +2090,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2055,11 +2102,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2067,37 +2114,11 @@
         ]
       },
       {
-        "code": 20500,
-        "label": {
-          "hint": {
-            "full": "Mouse Wheel",
-            "1u": "M.Whl"
-          },
-          "base": "Left"
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
-        "code": 20504,
-        "label": {
-          "hint": {
-            "full": "Mouse Wheel",
-            "1u": "M.Whl"
-          },
-          "base": "Right"
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2105,11 +2126,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2117,11 +2138,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2129,11 +2150,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2141,11 +2162,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2153,29 +2174,28 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 58,
         "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
+          "base": "F1"
+        }
       },
       {
-        "code": 20548,
+        "code": 59,
         "label": {
-          "hint": {
-            "full": "Mouse Button",
-            "1u": "M.Btn"
-          },
-          "base": "Middle"
-        },
-        "categories": [
-          "mousekeys"
-        ]
+          "base": "F2"
+        }
+      },
+      {
+        "code": 60,
+        "label": {
+          "base": "F3"
+        }
+      },
+      {
+        "code": 68,
+        "label": {
+          "base": "F11"
+        }
       },
       {
         "code": 65535,
@@ -2202,11 +2222,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2214,11 +2234,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2226,11 +2246,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2238,56 +2258,11 @@
         ]
       },
       {
-        "code": 20517,
-        "label": {
-          "hint": {
-            "full": "Mouse Warp",
-            "1u": "Warp"
-          },
-          "base": {
-            "full": "North-West",
-            "1u": "NW"
-          }
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
-        "code": 20521,
-        "label": {
-          "hint": {
-            "full": "Mouse Warp",
-            "1u": "Warp"
-          },
-          "base": {
-            "full": "North-East",
-            "1u": "NE"
-          }
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
-        "code": 20497,
-        "label": {
-          "hint": {
-            "full": "Mouse Wheel",
-            "1u": "M.Whl"
-          },
-          "base": "Up"
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2295,11 +2270,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2307,11 +2282,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2319,11 +2294,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2331,11 +2306,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2343,11 +2318,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2355,30 +2330,40 @@
         ]
       },
       {
-        "code": 20552,
+        "code": 0,
         "label": {
-          "hint": {
-            "full": "Mouse Button",
-            "1u": "M.Btn"
-          },
-          "base": "Back"
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
         },
         "categories": [
-          "mousekeys"
+          "blanks"
         ]
       },
       {
-        "code": 20545,
+        "code": 61,
         "label": {
-          "hint": {
-            "full": "Mouse Button",
-            "1u": "M.Btn"
-          },
-          "base": "Left"
-        },
-        "categories": [
-          "mousekeys"
-        ]
+          "base": "F4"
+        }
+      },
+      {
+        "code": 62,
+        "label": {
+          "base": "F5"
+        }
+      },
+      {
+        "code": 63,
+        "label": {
+          "base": "F6"
+        }
+      },
+      {
+        "code": 67,
+        "label": {
+          "base": "F10"
+        }
       },
       {
         "code": 65535,
@@ -2393,101 +2378,142 @@
         ]
       },
       {
-        "code": 20484,
-        "label": {
-          "hint": "Mouse",
-          "base": "Left"
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
-        "code": 20482,
-        "label": {
-          "hint": "Mouse",
-          "base": "Down"
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
-        "code": 20481,
-        "label": {
-          "hint": "Mouse",
-          "base": "Up"
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
-        "code": 20488,
-        "label": {
-          "hint": "Mouse",
-          "base": "Right"
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
-        "code": 20518,
-        "label": {
-          "hint": {
-            "full": "Mouse Warp",
-            "1u": "Warp"
-          },
-          "base": {
-            "full": "South-West",
-            "1u": "SW"
-          }
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
-        "code": 20522,
-        "label": {
-          "hint": {
-            "full": "Mouse Warp",
-            "1u": "Warp"
-          },
-          "base": {
-            "full": "South-East",
-            "1u": "SE"
-          }
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
-        "code": 20498,
-        "label": {
-          "hint": {
-            "full": "Mouse Wheel",
-            "1u": "M.Whl"
-          },
-          "base": "Down"
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
           "blanks"
         ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 80,
+        "label": {
+          "base": {
+            "full": "Left Arrow",
+            "1u": "←"
+          }
+        }
+      },
+      {
+        "code": 81,
+        "label": {
+          "base": {
+            "full": "Down Arrow",
+            "1u": "↓"
+          }
+        }
+      },
+      {
+        "code": 82,
+        "label": {
+          "base": {
+            "full": "Up Arrow",
+            "1u": "↑"
+          }
+        }
+      },
+      {
+        "code": 79,
+        "label": {
+          "base": {
+            "full": "Right Arrow",
+            "1u": "→"
+          }
+        }
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 0,
+        "label": {
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
+        },
+        "categories": [
+          "blanks"
+        ]
+      },
+      {
+        "code": 64,
+        "label": {
+          "base": "F7"
+        }
+      },
+      {
+        "code": 65,
+        "label": {
+          "base": "F8"
+        }
+      },
+      {
+        "code": 66,
+        "label": {
+          "base": "F9"
+        }
       },
       {
         "code": 65535,
@@ -2538,11 +2564,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2550,24 +2576,11 @@
         ]
       },
       {
-        "code": 20560,
-        "label": {
-          "hint": {
-            "full": "Mouse Button",
-            "1u": "M.Btn"
-          },
-          "base": "Forward"
-        },
-        "categories": [
-          "mousekeys"
-        ]
-      },
-      {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2575,11 +2588,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2587,11 +2600,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2599,11 +2612,11 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
@@ -2611,52 +2624,15 @@
         ]
       },
       {
-        "code": 65535,
+        "code": 0,
         "label": {
           "base": {
-            "full": "Transparent",
-            "1u": " "
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
           "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 65535,
-        "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
-      },
-      {
-        "code": 20576,
-        "label": {
-          "hint": {
-            "full": "Mouse Warp",
-            "1u": "Warp"
-          },
-          "base": "End"
-        },
-        "categories": [
-          "mousekeys"
         ]
       }
     ],
@@ -3595,12 +3571,12 @@
       4,
       4,
       0,
-      1,
-      1,
-      1,
+      0,
       0,
       1,
-      1,
+      0,
+      0,
+      0,
       0
     ],
     [
@@ -3673,33 +3649,33 @@
       6,
       0,
       6,
-      7,
+      0,
+      0,
+      0,
       1,
-      5,
-      5,
       6,
       11,
       11,
       11,
-      1,
-      1,
+      0,
+      0,
       8,
       8,
       8,
       8,
       8,
       8,
-      1,
-      1,
+      0,
+      0,
       8,
       8,
       8,
       8,
-      11,
-      11,
+      0,
+      0,
       6,
       1,
-      3,
+      4,
       5,
       8,
       8,
@@ -3711,95 +3687,95 @@
       6,
       6,
       6,
-      3,
       2,
-      1,
-      1,
-      2,
-      3,
-      6,
-      6,
-      3,
-      2,
-      1,
-      1,
-      2,
-      3,
-      6,
-      5,
       0,
       0,
+      0,
+      0,
+      2,
+      6,
+      6,
+      2,
       1,
+      0,
+      0,
+      0,
+      2,
+      6,
+      0,
       1,
-      1,
-      5,
-      5
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      6,
+      1,
       3,
-      3,
-      3,
-      0,
-      0,
-      3,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      5,
-      5,
-      0,
-      0,
-      0,
       7,
-      7,
-      7,
-      0,
-      0,
-      0,
-      0,
-      6,
-      0,
-      0,
-      0,
-      0,
-      6,
-      0,
-      0,
-      6,
-      0,
-      0,
-      0,
-      0,
-      6,
-      0,
-      0,
-      2,
-      2,
-      0,
       8,
-      2,
-      2,
-      2
+      8,
+      7,
+      0,
+      1,
+      6,
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     [
       0,
