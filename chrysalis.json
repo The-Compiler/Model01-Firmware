@@ -3382,15 +3382,16 @@
         ]
       },
       {
-        "code": 0,
+        "code": 17453,
         "label": {
-          "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
-          }
+          "hint": "ShiftTo",
+          "base": "#3"
         },
+        "target": 3,
+        "rangeStart": 17450,
         "categories": [
-          "blanks"
+          "layer",
+          "shifttolayer"
         ]
       },
       {
@@ -3418,15 +3419,16 @@
         ]
       },
       {
-        "code": 0,
+        "code": 17453,
         "label": {
-          "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
-          }
+          "hint": "ShiftTo",
+          "base": "#3"
         },
+        "target": 3,
+        "rangeStart": 17450,
         "categories": [
-          "blanks"
+          "layer",
+          "shifttolayer"
         ]
       },
       {
@@ -3741,7 +3743,7 @@
       1,
       6,
       1,
-      3,
+      8,
       7,
       8,
       8,
