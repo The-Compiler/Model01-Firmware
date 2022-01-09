@@ -380,16 +380,11 @@
         }
       },
       {
-        "code": 65535,
+        "code": 18,
         "label": {
-          "base": {
-            "full": "Transparent",
-            "1u": " "
-          }
-        },
-        "categories": [
-          "blanks"
-        ]
+          "base": "o",
+          "shifted": "O"
+        }
       },
       {
         "code": 65535,
@@ -3573,7 +3568,7 @@
       4,
       4,
       0,
-      0,
+      1,
       0,
       1,
       0,
