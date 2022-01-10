@@ -85,6 +85,9 @@
 // Custom HLWM plugin
 #include "HlwmPlugin.h"
 
+// Capslock
+#include "Kaleidoscope-CapsLock.h"
+
 /** This 'enum' is a list of all the macros used by the Model 01's firmware
   * The names aren't particularly important. What is important is that each
   * is unique.
@@ -601,7 +604,10 @@ KALEIDOSCOPE_INIT_PLUGINS(
   USBQuirks,
 
   // HLWM tag status plugin
-  Hlwm
+  Hlwm,
+ 
+  // Capslock LEDs
+  CapsLock
 );
 
 /** The 'setup' function is one of the two standard Arduino sketch functions.
