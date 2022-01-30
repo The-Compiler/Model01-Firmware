@@ -49,16 +49,15 @@
         }
       },
       {
-        "code": 17152,
+        "code": 0,
         "label": {
-          "hint": {
-            "full": "LEDEffect",
-            "1u": "LED"
-          },
-          "base": "Next"
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
         },
         "categories": [
-          "ledkeys"
+          "blanks"
         ]
       },
       {
@@ -612,32 +611,27 @@
         ]
       },
       {
-        "code": 17153,
+        "code": 0,
         "label": {
-          "hint": {
-            "full": "LEDEffect",
-            "1u": "LED"
-          },
           "base": {
-            "full": "Previous",
-            "1u": "Prev."
+            "full": "Blocked",
+            "1u": "Blkd"
           }
         },
         "categories": [
-          "ledkeys"
+          "blanks"
         ]
       },
       {
-        "code": 17152,
+        "code": 0,
         "label": {
-          "hint": {
-            "full": "LEDEffect",
-            "1u": "LED"
-          },
-          "base": "Next"
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
         },
         "categories": [
-          "ledkeys"
+          "blanks"
         ]
       },
       {
@@ -1341,27 +1335,32 @@
         ]
       },
       {
-        "code": 0,
+        "code": 17153,
         "label": {
+          "hint": {
+            "full": "LEDEffect",
+            "1u": "LED"
+          },
           "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
+            "full": "Previous",
+            "1u": "Prev."
           }
         },
         "categories": [
-          "blanks"
+          "ledkeys"
         ]
       },
       {
-        "code": 0,
+        "code": 17152,
         "label": {
-          "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
-          }
+          "hint": {
+            "full": "LEDEffect",
+            "1u": "LED"
+          },
+          "base": "Next"
         },
         "categories": [
-          "blanks"
+          "ledkeys"
         ]
       },
       {
@@ -4369,7 +4368,7 @@
       3,
       6,
       6,
-      8,
+      0,
       6,
       1,
       3,
@@ -4429,13 +4428,13 @@
       2,
       4,
       0,
-      8,
+      0,
       6,
       1,
       6,
       6,
       6,
-      8,
+      0,
       6,
       1,
       3,
@@ -4495,13 +4494,13 @@
       8,
       8,
       0,
-      0,
+      11,
       8,
       8,
       8,
       8,
       0,
-      0,
+      11,
       6,
       1,
       3,
