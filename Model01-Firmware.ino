@@ -77,7 +77,7 @@
 #include "Kaleidoscope-USB-Quirks.h"
 
 // One Shot Layer
-// #include "Kaleidoscope-OneShot.h"
+#include "Kaleidoscope-OneShot.h"
 
 // Dual-Use key
 #include "Kaleidoscope-Qukeys.h"
@@ -107,7 +107,7 @@ enum {
   MACRO_AUML,
   MACRO_OUML,
   MACRO_UUML,
-  MACRO_BANANA
+  //MACRO_BANANA
 };
 
 
@@ -350,6 +350,7 @@ static void umlautMacro(KeyEvent &event, Key base) {
 }
 
 /** Macro to trigger Banana extension. */
+/*
 static const macro_t* bananaMacro(KeyEvent &event) {
   if (!keyToggledOn(event.state)) {
     return MACRO_NONE;
@@ -375,6 +376,7 @@ static const macro_t* bananaMacro(KeyEvent &event) {
       U(LeftControl)
   );
 }
+*/
 
 
 /** macroAction dispatches keymap events that are tied to a macro
@@ -412,9 +414,9 @@ const macro_t *macroAction(uint8_t macro_id, KeyEvent &event) {
     umlautMacro(event, Key_U);
     break;
 
-  case MACRO_BANANA:
-    return bananaMacro(event);
-    break;
+  //case MACRO_BANANA:
+  //  return bananaMacro(event);
+  //  break;
   }
 
   return MACRO_NONE;
@@ -426,7 +428,7 @@ const macro_t *macroAction(uint8_t macro_id, KeyEvent &event) {
 // LED color modes calibrated to draw 500mA or less on the
 // Keyboardio Model 01.
 
-
+/*
 static kaleidoscope::plugin::LEDSolidColor solidRed(160, 0, 0);
 static kaleidoscope::plugin::LEDSolidColor solidOrange(140, 70, 0);
 static kaleidoscope::plugin::LEDSolidColor solidYellow(130, 100, 0);
@@ -434,6 +436,7 @@ static kaleidoscope::plugin::LEDSolidColor solidGreen(0, 160, 0);
 static kaleidoscope::plugin::LEDSolidColor solidBlue(0, 70, 130);
 static kaleidoscope::plugin::LEDSolidColor solidIndigo(0, 0, 170);
 static kaleidoscope::plugin::LEDSolidColor solidViolet(130, 0, 120);
+*/
 
 /** toggleLedsOnSuspendResume toggles the LEDs off when the host goes to sleep,
  * and turns them back on when it wakes up.
@@ -560,7 +563,7 @@ KALEIDOSCOPE_INIT_PLUGINS(
   // LEDChaseEffect,
 
   // These static effects turn your keyboard's LEDs a variety of colors
-  solidRed, solidOrange, solidYellow, solidGreen, solidBlue, solidIndigo, solidViolet,
+  //solidRed, solidOrange, solidYellow, solidGreen, solidBlue, solidIndigo, solidViolet,
 
   // The breathe effect slowly pulses all of the LEDs on your keyboard
   LEDBreatheEffect,
@@ -577,7 +580,7 @@ KALEIDOSCOPE_INIT_PLUGINS(
   // NumPad,
 
   // Support for one shot layers
-  // OneShot,
+  OneShot,
 
   // Support for dual-use keys
   Qukeys,
@@ -658,7 +661,7 @@ void setup() {
   ColormapEffect.max_layers(6);
 
   // Slower symbol typing (for now)
-  // OneShot.setTimeout(5000);
+  OneShot.setTimeout(5000);
 
   // Faster LED reaction for Qukeys
   Qukeys.setHoldTimeout(125);

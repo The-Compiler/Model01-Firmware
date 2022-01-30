@@ -1699,16 +1699,15 @@
         }
       },
       {
-        "code": 17455,
+        "code": 0,
         "label": {
-          "hint": "ShiftTo",
-          "base": "#5"
+          "base": {
+            "full": "Blocked",
+            "1u": "Blkd"
+          }
         },
-        "target": 5,
-        "rangeStart": 17450,
         "categories": [
-          "layer",
-          "shifttolayer"
+          "blanks"
         ]
       },
       {
@@ -3189,19 +3188,20 @@
         ]
       },
       {
-        "code": 4136,
+        "code": 49166,
         "label": {
           "hint": {
-            "full": "Super+",
-            "1u": "Su+"
+            "full": "OneShot",
+            "1u": "OSL"
           },
-          "base": "Enter"
+          "base": "#5"
         },
+        "target": 5,
+        "rangeStart": 49161,
         "categories": [
-          "with-modifiers",
-          "gui"
-        ],
-        "baseCode": 40
+          "layer",
+          "oneshot"
+        ]
       },
       {
         "code": 0,
@@ -3597,11 +3597,11 @@
         ]
       },
       {
-        "code": 0,
+        "code": 65535,
         "label": {
           "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
+            "full": "Transparent",
+            "1u": " "
           }
         },
         "categories": [
@@ -3609,11 +3609,11 @@
         ]
       },
       {
-        "code": 0,
+        "code": 65535,
         "label": {
           "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
+            "full": "Transparent",
+            "1u": " "
           }
         },
         "categories": [
@@ -4011,11 +4011,11 @@
         ]
       },
       {
-        "code": 0,
+        "code": 65535,
         "label": {
           "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
+            "full": "Transparent",
+            "1u": " "
           }
         },
         "categories": [
@@ -4023,11 +4023,11 @@
         ]
       },
       {
-        "code": 0,
+        "code": 65535,
         "label": {
           "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
+            "full": "Transparent",
+            "1u": " "
           }
         },
         "categories": [
@@ -4212,15 +4212,13 @@
         "baseCode": 38
       },
       {
-        "code": 0,
+        "code": 225,
         "label": {
-          "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
-          }
+          "base": "Shift"
         },
+        "location": "left",
         "categories": [
-          "blanks"
+          "modifier"
         ]
       },
       {
@@ -4248,15 +4246,13 @@
         ]
       },
       {
-        "code": 0,
+        "code": 229,
         "label": {
-          "base": {
-            "full": "Blocked",
-            "1u": "Blkd"
-          }
+          "base": "Shift"
         },
+        "location": "right",
         "categories": [
-          "blanks"
+          "modifier"
         ]
       },
       {
@@ -4704,16 +4700,16 @@
       0,
       0,
       0,
+      6,
       0,
+      8,
+      0,
+      1,
+      1,
       0,
       8,
       0,
-      8,
-      8,
-      0,
-      0,
-      0,
-      0,
+      6,
       0,
       0,
       0,
