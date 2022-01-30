@@ -7,7 +7,6 @@
 #include "Kaleidoscope.h"
 
 bool CapsLock_::capsCleanupDone = true;
-uint8_t CapsLock_::highlightShiftKeys = 2;
 uint8_t CapsLock_::shiftHue = 170;
 
 static bool getCapsLockState() {
@@ -26,7 +25,7 @@ kaleidoscope::EventHandlerResult CapsLock_::afterEachCycle() {
       for (uint8_t c = 0; c < kaleidoscope::Device::KeyScannerProps::matrix_columns; c++) {
         Key k = Layer.lookupOnActiveLayer(KeyAddr(r, c));
 
-        cRGB shiftColor = highlightShiftKeys == 2 ? breath_compute(shiftHue) : hsvToRgb(shiftHue, 255, 255);
+        cRGB shiftColor = breath_compute(shiftHue);
 
         if (highlightShiftKeys && (k == Key_LeftShift || k == Key_RightShift)) {
           ::LEDControl.setCrgbAt(KeyAddr(r, c), shiftColor);

@@ -6,7 +6,6 @@ class CapsLock_ : public kaleidoscope::Plugin {
   public:
     CapsLock_(void) {}
     static uint8_t shiftHue;
-    static uint8_t highlightShiftKeys;
 
     kaleidoscope::EventHandlerResult afterEachCycle();
 
