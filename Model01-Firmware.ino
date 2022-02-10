@@ -664,7 +664,7 @@ void setup() {
   OneShot.setTimeout(5000);
 
   // Faster LED reaction for Qukeys
-  Qukeys.setHoldTimeout(125);
+  //Qukeys.setHoldTimeout(60);
 }
 
 /** loop is the second of the standard Arduino sketch functions.

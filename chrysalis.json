@@ -319,17 +319,16 @@
         }
       },
       {
-        "code": 52283,
-        "baseCode": 41,
+        "code": 17454,
         "label": {
-          "hint": "Layer #4/",
-          "base": "Esc"
+          "hint": "ShiftTo",
+          "base": "#4"
         },
         "target": 4,
-        "rangeStart": 51218,
+        "rangeStart": 17450,
         "categories": [
           "layer",
-          "dualuse"
+          "shifttolayer"
         ]
       },
       {
@@ -457,33 +456,29 @@
         ]
       },
       {
-        "code": 49212,
-        "baseCode": 43,
+        "code": 224,
         "label": {
-          "hint": "Control/",
-          "base": "Tab"
+          "base": {
+            "full": "Control",
+            "1u": "Ctrl"
+          }
         },
-        "modifier": "Control",
-        "rangeStart": 49169,
+        "location": "left",
         "categories": [
-          "modifier",
-          "dualuse",
-          "ctrl"
+          "modifier"
         ]
       },
       {
-        "code": 49209,
-        "baseCode": 40,
+        "code": 228,
         "label": {
-          "hint": "Control/",
-          "base": "Enter"
+          "base": {
+            "full": "Control",
+            "1u": "Ctrl"
+          }
         },
-        "modifier": "Control",
-        "rangeStart": 49169,
+        "location": "right",
         "categories": [
-          "modifier",
-          "dualuse",
-          "ctrl"
+          "modifier"
         ]
       },
       {
