@@ -107,7 +107,7 @@ enum {
   MACRO_AUML,
   MACRO_OUML,
   MACRO_UUML,
-  //MACRO_BANANA
+  MACRO_BANANA
 };
 
 
@@ -350,7 +350,6 @@ static void umlautMacro(KeyEvent &event, Key base) {
 }
 
 /** Macro to trigger Banana extension. */
-/*
 static const macro_t* bananaMacro(KeyEvent &event) {
   if (!keyToggledOn(event.state)) {
     return MACRO_NONE;
@@ -362,13 +361,14 @@ static const macro_t* bananaMacro(KeyEvent &event) {
       T(E),
       U(LeftAlt),
       T(Enter),
-      W(100),
+      W(200),
 
       // Copy text and exit dialog
       D(LeftControl),
       T(C),
       U(LeftControl),
       T(Escape),
+      W(200),
 
       // Paste text
       D(LeftControl),
@@ -376,7 +376,6 @@ static const macro_t* bananaMacro(KeyEvent &event) {
       U(LeftControl)
   );
 }
-*/
 
 
 /** macroAction dispatches keymap events that are tied to a macro
@@ -414,9 +413,9 @@ const macro_t *macroAction(uint8_t macro_id, KeyEvent &event) {
     umlautMacro(event, Key_U);
     break;
 
-  //case MACRO_BANANA:
-  //  return bananaMacro(event);
-  //  break;
+  case MACRO_BANANA:
+    return bananaMacro(event);
+    break;
   }
 
   return MACRO_NONE;
