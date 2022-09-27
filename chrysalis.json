@@ -584,10 +584,10 @@
         "categories": ["blanks"]
       },
       {
-        "code": 24580,
-        "label": {"hint": "Macro", "base": "#4"},
-        "rangeStart": 24576,
-        "categories": ["macros"]
+        "code": 53598,
+        "label": {"hint": {"full": "Dynamic Macro", "1u": "DM"}, "base": "#2"},
+        "rangeStart": 53596,
+        "categories": ["dynmacros"]
       },
       {
         "code": 0,
@@ -610,10 +610,10 @@
         "categories": ["blanks"]
       },
       {
-        "code": 24578,
-        "label": {"hint": "Macro", "base": "#2"},
-        "rangeStart": 24576,
-        "categories": ["macros"]
+        "code": 53596,
+        "label": {"hint": {"full": "Dynamic Macro", "1u": "DM"}, "base": "#0"},
+        "rangeStart": 53596,
+        "categories": ["dynmacros"]
       },
       {"code": 55, "label": {"base": ".", "shifted": ">"}},
       {"code": 33, "label": {"base": "4", "shifted": "$"}},
@@ -640,10 +640,10 @@
       {"code": 14, "label": {"base": "k", "shifted": "K"}},
       {"code": 15, "label": {"base": "l", "shifted": "L"}},
       {
-        "code": 24579,
-        "label": {"hint": "Macro", "base": "#3"},
-        "rangeStart": 24576,
-        "categories": ["macros"]
+        "code": 53597,
+        "label": {"hint": {"full": "Dynamic Macro", "1u": "DM"}, "base": "#1"},
+        "rangeStart": 53596,
+        "categories": ["dynmacros"]
       },
       {
         "code": 0,
